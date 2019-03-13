@@ -3,13 +3,18 @@ function bmiCalculator() {
     var berat = document.querySelector(".berat");
     var tinggi = document.querySelector(".tinggi");
     var hasil = document.querySelector(".hasil");
+    var keterangan = document.querySelector(".keterangan");
+
     berat = berat.value;
     tinggi = tinggi.value
-    var bmi = berat / (tinggi * tinggi);
-    var result = Math.floor(bmi, 2);
+
+    var result = (berat / (tinggi * tinggi) * 10000).toFixed(1);
+
+
 
     if (result < 18.5) {
-        hasil.innerHTML = "your BMI is " + result + ", so you are underwight";
+        hasil.innerHTML = "your BMI is " + result;
+        keterangan.innerHTML = "so you are underwight";
     } else if (result >= 18.5 && result <= 24.9) {
         hasil.innerHTML = "your BMI is " + result + ", so you have a normal weight";
     } else {
