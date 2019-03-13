@@ -3,25 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>BMI Calculator</title>
 </head>
 
 <body>
-    <h1>kalkulato BMI</h1>
-    <p> berat:
-        <input type="number" class="berat"> in kilo</p>
-
-    <p> tinggi: <input type="text" class="tinggi"> in meter</p>
-    <button>bmi</button>
-    <p class="hasil">hasil:</p>
-    <p class="keterangan">hasil:</p>
-
-
-
-
+    <div class="container">
+        <div class="calc">
+            <p> Berat: &nbsp<input type="number" class="berat" size="4"> in kg</p>
+            <p> Tinggi: <input type="number" class="tinggi" size="4"> in cm</p>
+            <button>Calculate</button>
+            <p class="hasil"></p>
+            <p class="keterangan"></p>
+            <br>
+            <p class="keterangan2"></p>
+        </div>
+    </div>
     <script src="bmicalculator.js"></script>
 </body>
 

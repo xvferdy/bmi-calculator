@@ -4,6 +4,7 @@ function bmiCalculator() {
     var tinggi = document.querySelector(".tinggi");
     var hasil = document.querySelector(".hasil");
     var keterangan = document.querySelector(".keterangan");
+    var keterangan2 = document.querySelector(".keterangan2");
 
     berat = berat.value;
     tinggi = tinggi.value
@@ -13,12 +14,19 @@ function bmiCalculator() {
 
 
     if (result < 18.5) {
-        hasil.innerHTML = "your BMI is " + result;
-        keterangan.innerHTML = "so you are underwight";
+        hasil.innerHTML = "Your BMI is " + result;
+        keterangan.innerHTML = "So you are underwight !!";
+        keterangan2.innerHTML = "Go eat some pork 🍔";
+
     } else if (result >= 18.5 && result <= 24.9) {
-        hasil.innerHTML = "your BMI is " + result + ", so you have a normal weight";
+        hasil.innerHTML = "Your BMI is " + result;
+        keterangan.innerHTML = "So you are normal weight !!";
+        keterangan2.innerHTML = "Good job 👍🏽";
+
     } else {
-        hasil.innerHTML = "your BMI is " + result + ", so you are overwight";
+        hasil.innerHTML = "Your BMI is " + result;
+        keterangan.innerHTML = "So you are overwight !!";
+        keterangan2.innerHTML = "Go do some exercises 🚴‍♂️";
     }
 
 }
