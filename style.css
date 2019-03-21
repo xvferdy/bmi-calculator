@@ -1,8 +1,18 @@
 body {
     background-color: Lavender;
+}
+
+.container {
     font-family: monospace;
-    padding: 10% 15px;
     text-align: center;
-    font-size: 13px;
-    line-height: 1.65em;
+}
+
+fieldset {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    overflow: hidden;
 }
