@@ -1,10 +1,43 @@
 body {
-    background-color: Lavender;
+    background-color: #9FCEE0;
 }
 
 .container {
     font-family: monospace;
     text-align: center;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    background-color: #55acee;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+    color: #55acee;
+    transition: .1s;
+}
+
+a:visited {
+    color: black;
+}
+
+.button:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #6FC6FF;
 }
 
 fieldset {
@@ -13,6 +46,10 @@ fieldset {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 250px;
+    height: 320px;
     overflow: hidden;
+}
+
+span {
+    display: inline-block;
 }
