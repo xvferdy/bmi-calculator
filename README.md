@@ -13,7 +13,7 @@ penilaian standar untuk menentukan apakah berat badan Anda tergolong normal, kur
 - ...Belajar javascript dasar
 
 **What the project does:**
-- ...menghitung apakah berat badan Anda ideal, kurang, atau berlebih
+- ...Menghitung apakah berat badan Anda ideal, kurang, atau berlebih
 
 **Overview :rainbow:**
 <img src="images/overview.png">
